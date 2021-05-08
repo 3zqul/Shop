@@ -1,14 +1,11 @@
 package Sklep;
 
-public class User {
+public abstract class User {
 
     private int userID;
     String password;
     String userEmail;
     int userType;
 
-    public boolean signIn(String email, String password){
-
-        return false;
-    }
+    abstract public boolean signIn(String userEmail, String password);
 }
